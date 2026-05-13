@@ -37,7 +37,7 @@ if text:
     })
 
     resposta = client.chat.completions.create(
-        model="gpt-5.1-mini",
+        model="gpt-4o-mini",
         messages=st.session_state["lista_mensagens"],
         temperature=1.5
     )
