@@ -39,7 +39,7 @@ if text:
     resposta = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=st.session_state["lista_mensagens"],
-        temperature=1.5
+        temperature=1.0
     )
 
     resposta_final = resposta.choices[0].message.content
